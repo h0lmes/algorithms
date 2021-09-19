@@ -153,7 +153,7 @@ public class ObjectMemoryFootprint {
         printObjectSizeDeep(list);
 
         StringBuilder builder = new StringBuilder();
-        list.forEach(o -> builder.append(o.toString()));
+        list.forEach(o -> builder.append(o.toString()).append(System.lineSeparator()));
         writeFile(new File(".\\obj-ascii.csv"), builder.toString());
 
         // unicode
@@ -166,7 +166,7 @@ public class ObjectMemoryFootprint {
         printObjectSizeDeep(ulist);
 
         StringBuilder ubuilder = new StringBuilder();
-        ulist.forEach(o -> ubuilder.append(o.toString()));
+        ulist.forEach(o -> ubuilder.append(o.toString()).append(System.lineSeparator()));
         writeFile(new File(".\\obj-unicode.csv"), ubuilder.toString());
     }
 }
