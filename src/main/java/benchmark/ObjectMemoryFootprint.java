@@ -11,7 +11,7 @@ public class ObjectMemoryFootprint {
     private static final String QUERTY = "ABCDEF GHIJKLMN OPQRST UVWXYZ abcdef ghijklmn opqrst uvwxyz ,.!-";
     private static final char[] CHARS = QUERTY.toCharArray();
 
-    private static final String UNICODE = "\uD83D\uDE00\uD83D\uDE42";
+    private static final String UNICODE = "\uD83D\uDE00\uD83D\uDE42AB";
     private static final char[] UCHARS = UNICODE.toCharArray();
 
     private static String randomChars(char[] chars, int len) {

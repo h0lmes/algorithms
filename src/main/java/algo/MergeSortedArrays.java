@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class MergeSortedArrays {
 
     public static void main(String[] args) {
-        int[] nums1 = {1,2,3,7,100,0,0,0};
-        int[] nums2 = {2,5,6};
+        int[] nums1 = {1, 2, 3, 7, 100, 0, 0, 0};
+        int[] nums2 = {2, 5, 6};
         new MergeSortedArrays().merge(nums1, 5, nums2, 3);
         System.out.println(Arrays.toString(nums1));
 
@@ -25,7 +25,7 @@ public class MergeSortedArrays {
         while (i1 >= 0 && i2 >= 0)
             nums1[to--] = nums1[i1] > nums2[i2] ? nums1[i1--] : nums2[i2--];
 
-        while (i1 >= 0) nums1[to--] = nums1[i1--];
+        //while (i1 >= 0) nums1[to--] = nums1[i1--];
         while (i2 >= 0) nums1[to--] = nums2[i2--];
     }
 }
