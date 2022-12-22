@@ -41,8 +41,7 @@ public class Sort {
         public void init() {
             list = IntStream
                     .range(0, size)
-                    .boxed()
-                    .map(Entity::new)
+                    .mapToObj(Entity::new)
                     .collect(Collectors.toList());
             array = list.toArray(new Entity[0]);
         }

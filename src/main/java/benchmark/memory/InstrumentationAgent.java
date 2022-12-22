@@ -1,4 +1,4 @@
-package benchmark;
+package benchmark.memory;
 
 import java.lang.instrument.Instrumentation;
 
